@@ -22,6 +22,19 @@
             "database": "talently",
             "username": "root",
             "askForPassword": true
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mysql2",
+            "database": "online_shop",
+            "username": "root",
+            "askForPassword": true
         }
     ]
 }
