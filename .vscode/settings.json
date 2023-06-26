@@ -1,40 +1,28 @@
 {
     "sqltools.connections": [
         {
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 5432,
-            "askForPassword": true,
-            "driver": "PostgreSQL",
-            "name": "postgresql1",
-            "database": "postgres",
-            "username": "postgres"
-        },
-        {
             "mysqlOptions": {
-                "authProtocol": "default"
-            },
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 3306,
-            "driver": "MySQL",
-            "name": "mysql1",
-            "database": "talently",
-            "username": "root",
-            "askForPassword": true
-        },
-        {
-            "mysqlOptions": {
-                "authProtocol": "default"
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
             },
             "previewLimit": 50,
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
             "name": "mysql2",
-            "database": "online_shop",
+            "database": "sales_example",
             "username": "root",
             "askForPassword": true
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "postgresql1",
+            "database": "sales_example",
+            "username": "postgres"
         }
     ]
 }
