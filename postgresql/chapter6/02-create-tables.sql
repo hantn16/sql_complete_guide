@@ -1,0 +1,17 @@
+CREATE TABLE users(
+  id SERIAL PRiMARY KEY,
+  first_name VARCHAR(200) NOT NULL,
+  last_name VARCHAR(200) NOT NULL,
+  email VARCHAR(500) NOT NULL,
+  address_id SERIAL
+);
+CREATE TABLE addresses(
+  id SERIAL PRIMARY KEY,
+  street VARCHAR(300) NOT NULL,
+  house_number VARCHAR(50) NOT NULL,
+  city_id SERIAL
+);
+CREATE TABLE cities(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(200) NOT NULL UNIQUE
+);
